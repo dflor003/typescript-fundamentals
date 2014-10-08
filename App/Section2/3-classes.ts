@@ -60,12 +60,14 @@ module foo.bar {
             return new Point(this.y, this.x);
         }
 
+        // Overloading
         add(other: Point): Point
         add(other: IPoint): IPoint;
         add(other: any): any { // Note: Order matters
             return new Point(this.x + other.x, this.y + other.y);
         }
 
+        // Static methods
         static origin(): Point {
             return new Point(0, 0);
         }

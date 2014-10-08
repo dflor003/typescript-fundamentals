@@ -63,6 +63,7 @@ var foo;
                 return new Point(this.x + other.x, this.y + other.y);
             };
 
+            // Static methods
             Point.origin = function () {
                 return new Point(0, 0);
             };
