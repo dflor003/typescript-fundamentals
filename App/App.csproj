@@ -35,6 +35,7 @@
     <TypeScriptCompile Include="Section2\1-modules.ts" />
     <TypeScriptCompile Include="Section2\2-interfaces.ts" />
     <TypeScriptCompile Include="Section2\3-classes.ts" />
+    <TypeScriptCompile Include="Section2\4-inheritance.ts" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

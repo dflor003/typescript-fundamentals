@@ -1,19 +1,43 @@
-﻿class BaseClass {
-    private value: string;
+﻿module foo.bar {
+    
+    class BaseClass {
+        private value: string;
 
-    constructor(value: string) {
-        this.value = value;
+        constructor(value: string) {
+            this.value = value;
+        }
+
+        getValue(): string { return this.value; }
     }
 
-    getValue(): string { return this.value; }
-}
+    class DerivedClass extends BaseClass {
+        appendValue = 'Extended'
 
-class DerivedClass extends BaseClass {
-    constructor(value: string) {
-        super(value);
+        constructor(value: string) {
+            super(value);
+        }
+
+        getValue(): string {
+            return super.getValue() + ' ' + this.appendValue;
+        }
     }
 
-    getValue(): string {
-        return super.getValue() + ' Extended';
+    // Polymorphism
+    var baseClasses: BaseClass[] = [
+        new BaseClass('foo'),
+        new BaseClass('bar'),
+        new DerivedClass('baz')
+    ];
+
+    console.log(baseClasses[0].getValue()); // Works
+    console.log(baseClasses[2].appendedValue); // Nope
+
+    // 
+    for (var i = 0; i < baseClasses.length; i++) {
+        console.log(baseClasses[i].getValue());
     }
+    // Prints:
+    // foo
+    // bar
+    // baz Extended
 }
