@@ -18,12 +18,8 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app.css" />
     <Content Include="index.html" />
     <Content Include="web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
   </ItemGroup>
   <ItemGroup>
     <None Include="web.Debug.config">
@@ -33,6 +29,14 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Section1\my-first-typescript-file-complete.ts" />
+    <TypeScriptCompile Include="Section1\my-first-typescript-file.ts" />
+    <TypeScriptCompile Include="Section2\1-modules.ts" />
+    <TypeScriptCompile Include="Section2\2-interfaces.ts" />
+    <TypeScriptCompile Include="Section2\3-classes.ts" />
+  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
