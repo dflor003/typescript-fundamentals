@@ -54,3 +54,14 @@ module app.section2 {
     console.assert(x === 55);
 }
 
+module app.section2 {
+    
+    // Indexers supported too
+    export interface INumberDictionary {
+        [key: number]: any;
+    }
+
+    var numDict: INumberDictionary = {};
+    numDict[42] = true; // Works
+    numDict['foo'] = true; // Also works?
+}

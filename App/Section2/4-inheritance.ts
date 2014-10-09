@@ -32,7 +32,7 @@
     console.log(baseClasses[0].getValue()); // Works
     console.log(baseClasses[2].appendedValue); // Nope
 
-    // 
+    // Iterate and use polymorphically
     for (var i = 0; i < baseClasses.length; i++) {
         console.log(baseClasses[i].getValue());
     }

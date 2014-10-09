@@ -19,9 +19,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="Section3\jstorage.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="packages.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -30,12 +32,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="Section1\my-first-typescript-file-complete.ts" />
     <TypeScriptCompile Include="Section1\my-first-typescript-file.ts" />
     <TypeScriptCompile Include="Section2\1-modules.ts" />
     <TypeScriptCompile Include="Section2\2-interfaces.ts" />
     <TypeScriptCompile Include="Section2\3-classes.ts" />
     <TypeScriptCompile Include="Section2\4-inheritance.ts" />
+    <TypeScriptCompile Include="Section2\5-lambdas.ts" />
+    <TypeScriptCompile Include="Section2\6-generics.ts" />
+    <TypeScriptCompile Include="Section3\jstorage-complete.d.ts" />
+    <TypeScriptCompile Include="Section3\jstorage.d.ts" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

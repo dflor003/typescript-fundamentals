@@ -33,4 +33,16 @@ var app;
     })(app.section2 || (app.section2 = {}));
     var section2 = app.section2;
 })(app || (app = {}));
+
+var app;
+(function (app) {
+    (function (section2) {
+        
+
+        var numDict = {};
+        numDict[42] = true; // Works
+        numDict['foo'] = true; // Also works?
+    })(app.section2 || (app.section2 = {}));
+    var section2 = app.section2;
+})(app || (app = {}));
 //# sourceMappingURL=2-interfaces.js.map
