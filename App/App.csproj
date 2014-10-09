@@ -19,11 +19,62 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="Scripts\lib\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Scripts\lib\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Scripts\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="Scripts\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Scripts\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\lib\bootstrap\js\bootstrap.js" />
+    <Content Include="Scripts\lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\css\font-awesome.css" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\css\font-awesome.min.css" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Scripts\lib\jquery\jquery-2.1.1.js" />
+    <Content Include="Scripts\lib\jquery\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\lib\jstorage\jstorage.js" />
+    <Content Include="Scripts\lib\knockout\knockout-3.2.0.debug.js" />
+    <Content Include="Scripts\lib\knockout\knockout-3.2.0.js" />
     <Content Include="Section3\jstorage.js" />
+    <Content Include="Section5 - Knockout\todo-knockout.html" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="Scripts\lib\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Scripts\lib\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Scripts\lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Scripts\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Scripts\lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\fonts\FontAwesome.otf" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\less\bordered-pulled.less" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\less\core.less" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\less\fixed-width.less" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\less\font-awesome.less" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\less\icons.less" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\less\larger.less" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\less\list.less" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\less\mixins.less" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\less\path.less" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\less\rotated-flipped.less" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\less\spinning.less" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\less\stacked.less" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\less\variables.less" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\scss\font-awesome.scss" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\scss\_bordered-pulled.scss" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\scss\_core.scss" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\scss\_fixed-width.scss" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\scss\_icons.scss" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\scss\_larger.scss" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\scss\_list.scss" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\scss\_mixins.scss" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\scss\_path.scss" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\scss\_rotated-flipped.scss" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\scss\_spinning.scss" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\scss\_stacked.scss" />
+    <Content Include="Scripts\lib\font-awesome-4.2.0\scss\_variables.scss" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -33,6 +84,8 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jstorage\jstorage.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\knockout\knockout.d.ts" />
     <TypeScriptCompile Include="Section1\my-first-typescript-file-complete.ts" />
     <TypeScriptCompile Include="Section1\my-first-typescript-file.ts" />
     <TypeScriptCompile Include="Section2\1-modules.ts" />
@@ -43,6 +96,10 @@
     <TypeScriptCompile Include="Section2\6-generics.ts" />
     <TypeScriptCompile Include="Section3\jstorage-complete.d.ts" />
     <TypeScriptCompile Include="Section3\jstorage.d.ts" />
+    <TypeScriptCompile Include="Section4\1-properties.ts" />
+    <TypeScriptCompile Include="Section4\2-extensions.ts" />
+    <TypeScriptCompile Include="Section5 - Knockout\todo-item.ts" />
+    <TypeScriptCompile Include="Section5 - Knockout\todo-viewmodel.ts" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
@@ -57,7 +114,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>54967</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
